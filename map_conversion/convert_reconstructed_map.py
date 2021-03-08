@@ -89,8 +89,8 @@ class Intrinsic3DDatasetGenerator:
         lines = []
         for row in matrix:
             lines.append(" ".join(row.astype(np.str)) + "\n")
-        open(join(self.output_root, "colorintrinsics.txt"), "w").writelines(lines)
-        open(join(self.output_root, "depthintrinsics.txt"), "w").writelines(lines)
+        open(join(self.output_root, "colorIntrinsics.txt"), "w").writelines(lines)
+        open(join(self.output_root, "depthIntrinsics.txt"), "w").writelines(lines)
 
 class DscastarGenerator:
     """This class generate a data structure for DSACSTAR.
